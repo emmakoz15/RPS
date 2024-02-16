@@ -21,16 +21,38 @@
     </head>
 
     <body>
-        <div class="container">
+      
         <header>
             <!-- place navbar here -->
-            <nav class="navbar fixed-top">
+            <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Fixed top</a>
+                  <span class="navbar-text">
+                    Navbar text with an inline element
+                  </span>
                 </div>
               </nav>
         </header>
-        <main></main>
+       
+        <div class="container-fluid main-contr">
+
+        <main>
+            <!--top buttons-->
+            <div class="row justify-content-center">
+                <div class="col-3 col-lg-4 mt-3  mx-2 bg-primary border-dark h-100" id="change">
+                    <h3> Reset</h3>
+                </div>
+            <div class="col-6 col-lg-7 mt-3 bg-primary h-100" id="change">
+                <h3> Score</h3>
+            </div>
+
+            </div>
+            <!--game-->
+            <div class="row border m-3 p-2 justify-content-center">
+                <div class="col-3 m-3 h-100 border"></div>
+                <div class="col-3 m-3 h-100 border"></div>
+            </div>
+
+        </main>
 
         <!--container end-->
     </div>
