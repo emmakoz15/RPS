@@ -1,102 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>RPS</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+  <head>
+    <title>RPS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <!-- css link-->
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- css link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
-      
-        <header>
-            <!-- place navbar here -->
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <span class="navbar-text">
-                    Navbar text with an inline element
-                  </span>
-                </div>
-              </nav>
-        </header>
-       
-        <div class="container-fluid main-contr">
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid justify-content-center">
+          <span class="navbar-text "> ROCK PAPER SCISSORS </span>
+        </div>
+      </nav>
+    </header>
 
-        <main>
-            <!--top buttons-->
-            <div class="row justify-content-center m-1">
-                <div class="col-3 col-lg-4 mt-3  mx-2 bg-primary h-100 border-dark h-100" id="change">
-                    <h3> Reset</h3>
-                </div>
-            <div class="col-6 col-lg-7 mt-3 bg-primary h-100" id="change">
-                <h3> Score</h3>
+    <div class="container-fluid main-contr">
+      <main>
+        <!--top buttons-->
+        <div class="row resetscore m-1">
+            <!--reset game-->
+          <div
+            class="col-3 col-lg-4 mt-3 mx-2 bg-primary h-100 border-dark h-100"
+            id="change"
+          >
+            <h3>Reset</h3>
+          </div>
+          <!-- keep score-->
+          <div class="col-6 col-lg-7 mt-3 bg-primary h-100" id="change">
+            <h3>Score</h3>
+            <span class="m-2 border"> you</span>
+            <span>comp</span>
+          </div>
+        </div>
+        <!--game-->
+        <!-- rps chocies-->
+        <div class="container mt-3 border">
+          <div class="row m-3 text-center p-2 spacebx">
+            <div class="col-3 bg-light h-100 border">
+              <h2>Your name</h2>
             </div>
-
+            <div class="col-3 bg-light h-100 border">
+              <h2>VS.</h2>
             </div>
-            <!--game-->
-            <div class="row border m-3 bg-">
-            <div class="row  m-3 p-2 ">
-                <div class="col-3 m-3 bg-light h-100 border">
-                    <h2>Your name</h2>
-                </div>
-
-
-                <!-- need to alin comp to right temparary solution FIXXXXXXX-->
-                <div class="col-3"></div>
-                <div class="col-2"></div>
-                <!-- fixxxxxxxxx-->
-
-
-                <div class="col-3 m-3 bg-light h-100 border rightside">
-                    <h2>comp</h2>
-                </div>
+            <div class="col-3 bg-light h-100 border">
+              <h2>comp pick</h2>
             </div>
-            <div class="row p-5 border bg-primary justify-content-center ">
-                <div class="row m-3 justify-content-center">
-                    <div class=" col-1 border bg-light btn rouded m-3 p-2 h-100">R</div>
-                </div>
-                <div class="row m-3 justify-content-center ">
-                    <div class=" col-1 border bg-light btn rouded m-3 p-2 h-100">P</div>
-                </div><div class="row m-3 justify-content-center">
-                    <div class="col-1 border bg-light btn rouded m-3 p-2 h-100">S</div>
-                </div>
-            </div>
-            </div>
+          </div>
 
-        </main>
+          <div class="row justify-content-center p-5 border bg-primary ">
+            <!-- your pick and comp pick-->
+            <div class="row text-center ypick&cpick">
+                <h4 class="col-6"> Your pick:<span>rth</span></h4>
+                <h4 class ="col-6">Computer pick:<span></span></h4>
+               
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-1 border bg-light btn rouded btnrps m-3 p-2">
+                R
+              </div>
 
-        <!--container end-->
+              <div class="col-1 border bg-light btn rouded m-3 p-2 btnrps">
+                P
+              </div>
+
+              <div
+                class="col-12 col-lg-1 border bg-light btn rouded m-3 p-2 btnrps"
+              >
+                S
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--close game container ^-->
+
+        <!--display winner/loser-->
+        <div class="row m-2 bg-dark">
+          <!-- fill with text and img pop up after game popup-->
+        </div>
+      </main>
+
+      <!--container end-->
     </div>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-<!--my js link-->
-        <script src="script.js"></script>
-
-    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!--my js link-->
+    <script src="script.js"></script>
+  </body>
 </html>
