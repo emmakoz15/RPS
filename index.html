@@ -44,8 +44,7 @@
           <!-- keep score-->
           <div class="col-6 col-lg-7 mt-3 bg-primary h-100" id="change">
             <h3>Score</h3>
-            <span class="m-2 border"> you</span>
-            <span>comp</span>
+        
           </div>
         </div>
         <!--game-->
@@ -53,7 +52,7 @@
         <div class="container mt-3 border">
           <div class="row m-3 text-center p-2 spacebx">
             <div class="col-3 bg-light h-100 border">
-              <h2>Your name</h2>
+              <h2 id="yname">Your name</h2>
             </div>
             <div class="col-3 bg-light h-100 border">
               <h2>VS.</h2>
@@ -71,17 +70,16 @@
                
             </div>
             <div class="row justify-content-center">
-              <div class="col-1 border bg-light btn rouded btnrps m-3 p-2">
+              <div class="col-1 border bg-light btn rouded btnrps m-3 p-2" id="rock" onclick="collectRock()">
                 R
               </div>
 
-              <div class="col-1 border bg-light btn rouded m-3 p-2 btnrps">
+              <div class="col-1 border bg-light btn rouded m-3 p-2 btnrps" id="paper" onclick="collectPaper()">
                 P
               </div>
 
               <div
-                class="col-12 col-lg-1 border bg-light btn rouded m-3 p-2 btnrps"
-              >
+                class="col-12 col-lg-1 border bg-light btn rouded m-3 p-2 btnrps" id="Scissor" onclick="collectScissor()">
                 S
               </div>
             </div>
