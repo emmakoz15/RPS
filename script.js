@@ -12,36 +12,43 @@ window.onload = (event) =>{
     document.getElementById('yname').textContent = `${userName}`
 }
 
-let playerSelect = userChoice
+//play game
 
-userChoice = 'Rock'
-if userChoice = playerSelect
+const choices = ["rock", "paper", "scissors"]
+const playerDisplay = document.getElementById('playerDisplay')
+const computerDisplay = document.getElementById('computerDisplay')
+const resultDisplay = document.getElementById('resultDisplay')
 
+function playGame(playerChoice){
 
+  const computerChoice = choices[Math.floor(Math.random() * 3)]
+  let result = ''
 
-
-//let userChoiceRock = document.getElementById('rbtn')
-
-/* const getUserChoice = (userInput) => {
-    userInput = userInput.toLowerCase();
-    if (
-      userInput == "rock" ||
-      userInput === "paper" ||
-      userInput === "scissors" ||
-    ) {
-      return userInput;
-
-
-const getComputerChoice = () => {
-    const randomNumber = Math.floor(Math.random() * 3); //whyyyyyyy
-    switch (randomNumber) {
-      case 0:
-        return "rock";
-      case 1:
-        return "paper";
-      case 2:
-        return "scissors";
+  if (playerChoice === computerChoice){
+    result = "IT'S A TIE"
+  }
+  else{
+    switch(playerChoice){
+      case 'rock' :
+      result = (computerChoice === 'scissors') ? "you win": "you lose"
+      break
+      case 'paper' :
+      result = (computerChoice === 'rock') ? "you win": "you lose"
+      break
+      case 'scissors' :
+        result = (computerChoice === 'paper') ? "you win": "you lose"
+      break
     }
   }
 
- */
+  playerDisplay.textContent = `Player ${playerChoice}`
+  computerDisplay.textContent = `Computer ${computerChoice}`
+  resultDisplay.textContent = result
+
+  
+}
+// https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=967s link for tutorial
+
+//collect score
+
+let calcScore = 
