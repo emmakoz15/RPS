@@ -33,13 +33,12 @@
     <div class="container-fluid main-contr">
       <main>
         <!--top buttons-->
-        <div class="row resetscore m-1">
+        <div class="row resetscore m-1">0
             <!--reset game-->
           <div
-            class="col-3 col-lg-4 mt-3 mx-2 bg-primary h-100 border-dark h-100"
-            id="changeresul"
-          >
-            <h3>Reset</h3>
+            class="col-3 col-lg-4 mt-3 mx-2 bg-primary  h-100 border-dark h-100"
+            id="reset">
+            <button onclick= ""></button>
           </div>
           <!-- keep score-->
           <div class="col-6 col-lg-7 mt-3 bg-primary h-100" id="change">
@@ -71,16 +70,16 @@
                
             </div>
             <div id = "choices" class="row justify-content-center">
-              <button onclick= "playGame('rock')" class="col-1 border bg-light btn rouded btnrps m-3 p-2" id="rock" onclick="collectRock()">
+              <button onclick= "playGame('rock')" class="col-1 border bg-light btn rouded btnrps m-3 p-2" id="rock" >
                 R
               </button>
 
-              <button onclick= "playGame('paper')" class="col-1 border bg-light btn rouded m-3 p-2 btnrps" id="paper" onclick="collectPaper()">
+              <button onclick= "playGame('paper')" class="col-1 border bg-light btn rouded m-3 p-2 btnrps" id="paper" ">
                 P
               </button>
 
               <button onclick= "playGame('scissors')"
-                class="col-12 col-lg-1 border bg-light btn rouded m-3 p-2 btnrps" id="Scissor" onclick="collectScissor()">
+                class="col-12 col-lg-1 border bg-light btn rouded m-3 p-2 btnrps" id="Scissor">
                 S
             </button>
             </div>

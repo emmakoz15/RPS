@@ -12,7 +12,12 @@ window.onload = (event) =>{
     document.getElementById('yname').textContent = `${userName}`
 }
 
+//reload page
+let reset = location.reload();
 
+function load(){
+  
+}
 
 //gm=ame score
 let playerScore = 0
@@ -50,14 +55,16 @@ function playGame(playerChoice){
     playerScore++ //you win your score goes up 1
   } else if (result === "you lose") {
     computerScore++ //comp wins it goes up 1
-  } else if( playerScore + computerScore === 5){
-    document.getElementById("rock").classList.add("display")
-    document.getElementById("paper").classList.add("display")
-    document.getElementById("Scissor").classList.add("display")
 } else {
   
 }
    // nothing gets added
+
+   if( playerScore + computerScore === 5){
+    document.getElementById("rock").classList.add("display")
+    document.getElementById("paper").classList.add("display")
+    document.getElementById("Scissor").classList.add("display")
+   } else{}
   
   
  if(playerScore > 3){
