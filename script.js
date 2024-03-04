@@ -9,7 +9,7 @@ window.onload = (event) => {
     userName = prompt('Enter Your Name')
   }
 
-  document.getElementById('yname').textContent = `${userName}`
+  document.getElementById('yname').textContent = `${userName}:`
 }
 
 
@@ -61,21 +61,21 @@ function playGame(playerChoice) {
     document.getElementById("rock").classList.add("display")
     document.getElementById("paper").classList.add("display")
     document.getElementById("Scissor").classList.add("display")
+    document.getElementById("winorlose").classList.remove("disround5")
   } else { }
 
 
   if (playerScore > 3) {
     document.getElementById("winorlose").textContent = "YOU WIN THE GAME"
-  } else if (computerScore > 3) {
-    document.getElementById("winorlose").textContent = "YOU LOSE THE GAME"
   } else {
+    document.getElementById("winorlose").textContent = "YOU LOSE THE GAME"
+  } 
 
-  }
 
 
 
-  playerDisplay.textContent = `Player ${playerChoice}`
-  computerDisplay.textContent = `Computer ${computerChoice}`
+  playerDisplay.textContent = `${playerChoice}`
+  computerDisplay.textContent = `${computerChoice}`
   resultDisplay.textContent = result
 
   document.getElementById('change').textContent = `${playerScore} vs. ${computerScore}`

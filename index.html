@@ -27,53 +27,66 @@
     </nav>
   </header>
 
+   <!-- end navbar  -->
+
+    <!-- main console -->
+
   <div class="container-fluid main-contr text ">
+
+
     <main>
       <!--top buttons-->
       <div class="row resetscore align-items-center m-1 ">
         <!--reset game-->
         <div class="col-3 col-lg-4 mt-3 mx-2 bg-prime  h-100 border-dark h-100" id="reset">
           <a href="https://emmakoz15.github.io/RPS/">
-          <button class = 'btn' > RESET</button>
+          <button class = ' bg-prime btn' > RESET</button>
         </a>
         </div>
         <!-- keep score-->
-        <div class="col-3 col-lg-7 mt-3 bg-prime h-100" id="change">
-          <h3>Score</h3>
+        <div class="col-3 col-lg-4 mt-3  bg-prime h-100" id="change">
+          <h3 class="m-2">Score</h3>
 
         </div>
       </div>
+
+       <!-- end top buttons -->
+
       <!--game-->
       <!-- rps chocies-->
       <div class="container-fluid mt-3 border">
         <div class="row m-3 text-center p-2 spacebx">
-          <div class="col-3 box1 h-100 border ">
+          <div class="col-4 box1 h-100 border ">
             <h2 id="yname">Your name</h2>
+            <div class="col-3" id="playerDisplay"></div>
           </div>
-          <div class="col-3 box1 h-100 border">
+          <div class="col-2 box1 h-100 border">
             <h2>VS.</h2>
           </div>
-          <div class="col-3 box1 h-100 border">
-            <h2>comp pick</h2>
+          <div class="col-4 box1 h-100 border">
+            <h2>Computer:</h2>
+            <div class="col-3" id="computerDisplay"></div>
           </div>
         </div>
 
               <!--display choices-->
 
-      <div id="resultDisplay" class="row justify-content-center text-center m-3 text ">
+               <!--display winner/loser-->
+<!--one round-->
+      <div id="resultDisplay" class="row justify-content-center textofwinner text-center m-3 text ">
 
-        <!--display winner/loser-->
-        <div id="winorlose" class=" ">
-          <!-- fill with text and img pop up after game popup-->
-        </div>
+        
+      </div>
+    <!--all rounds-->
+      <div id="winorlose" class=" textofwinner disround5 text-center ">
       </div>
 
 
         <div class="row justify-content-center p-5 border bg-prime ">
           <!-- your pick and comp pick-->
           <div class="row justify-content-center text-center ypick&cpick">
-            <div class="col-3" id="playerDisplay">PLAYER:</div>
-            <div class="col-3" id="computerDisplay">Computer:</div>
+            
+          
 
 
           </div>
