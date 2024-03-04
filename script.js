@@ -65,9 +65,9 @@ function playGame(playerChoice) {
 
 
   if (playerScore > 3) {
-    document.getElementById("winorlose").textContent = "YOU WIN"
+    document.getElementById("winorlose").textContent = "YOU WIN THE GAME"
   } else if (computerScore > 3) {
-    document.getElementById("winorlose").textContent = "YOU LOSE"
+    document.getElementById("winorlose").textContent = "YOU LOSE THE GAME"
   } else {
 
   }

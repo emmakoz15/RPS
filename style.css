@@ -1,9 +1,14 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background-color: rgb(8, 6, 44);
 }
 
 .textofwinner {
-    font-size: larger;
+    font-size: x-large;
     color: #fdff00;
 }
 
@@ -33,10 +38,7 @@ body {
     font-style: normal;
 }
 
-.main-contr {
-    width: 100%;
-    height: 100%;
-}
+
 
 .spacebx {
     justify-content: space-between;

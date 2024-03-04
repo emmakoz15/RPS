@@ -34,18 +34,18 @@
         <!--reset game-->
         <div class="col-3 col-lg-4 mt-3 mx-2 bg-prime  h-100 border-dark h-100" id="reset">
           <a href="https://emmakoz15.github.io/RPS/">
-          <button class = 'btn  ' > RESET</button>
+          <button class = 'btn' > RESET</button>
         </a>
         </div>
         <!-- keep score-->
-        <div class="col-6 col-lg-7 mt-3 bg-prime h-100" id="change">
+        <div class="col-3 col-lg-7 mt-3 bg-prime h-100" id="change">
           <h3>Score</h3>
 
         </div>
       </div>
       <!--game-->
       <!-- rps chocies-->
-      <div class="container mt-3 border">
+      <div class="container-fluid mt-3 border">
         <div class="row m-3 text-center p-2 spacebx">
           <div class="col-3 box1 h-100 border ">
             <h2 id="yname">Your name</h2>
@@ -57,6 +57,17 @@
             <h2>comp pick</h2>
           </div>
         </div>
+
+              <!--display choices-->
+
+      <div id="resultDisplay" class="row justify-content-center text-center m-3 text ">
+
+        <!--display winner/loser-->
+        <div id="winorlose" class=" ">
+          <!-- fill with text and img pop up after game popup-->
+        </div>
+      </div>
+
 
         <div class="row justify-content-center p-5 border bg-prime ">
           <!-- your pick and comp pick-->
@@ -84,15 +95,7 @@
       </div>
       <!--close game container ^-->
 
-      <!--display choices-->
 
-      <div id="resultDisplay" class="row justify-content-center text-center m-3 text textofwinner">
-
-        <!--display winner/loser-->
-        <div id="winorlose" class=" ">
-          <!-- fill with text and img pop up after game popup-->
-        </div>
-      </div>
     </main>
 
     <!--container end-->
